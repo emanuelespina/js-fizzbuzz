@@ -15,3 +15,26 @@
 
 */
 
+for (let i = 1; i <= 100; i++) {
+
+    const firstDiv = 3;
+    const secondDiv = 5;
+
+    const firstWord = "Fizz";
+    const secondWord = "Buzz";
+
+    let message;
+
+    if (i % firstDiv === 0 && i % secondDiv === 0) {
+        message = firstWord + secondWord;
+    } else if (i % firstDiv === 0) {
+        message = firstWord;
+    } else if (i % secondDiv === 0) {
+        message = secondWord
+    } else {
+        message = i;
+    }
+
+    console.log(message);
+
+}
